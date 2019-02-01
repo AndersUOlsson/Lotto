@@ -15,9 +15,10 @@ namespace Lotto
             InitializeComponent();
         }
 
-        
+        //Start button. 
         private void StartBtn_Click(object sender, EventArgs e)
         {
+            Scorelbl.Visible = false;
             _checkControler.CheckForEmpty(panel1, textBoxHowManyTries, StartBtn);
 
             var values = new string[7];
@@ -32,22 +33,24 @@ namespace Lotto
             var howManyTimes = int.Parse(textBoxHowManyTries.Text);
 
             var result = _ticketCalculator.SetTheNumberOfTheTicket(values, howManyTimes);
+            Scorelbl.Visible = true;
+            StartBtn.Enabled = false;
 
             textBoxHowManyFives.Text   = result[0].ToString();
             textBoxHowManySixth.Text   = result[1].ToString();
             textBoxHowManySeventh.Text = result[2].ToString();
 
-            
-
+            StartBtn.Enabled = true;
         }
 
+        //From here and downward are the textboxes from the GUI. This textboxes have some controllers from the CheckControler class.
+        //More info about the controls check "CheckControler" class.
         private void textBoxValue1_TextChanged(object sender, EventArgs e)
         {
             _checkControler.ControlNumberInterval(textBoxValue1);
             _checkControler.CheckForEmpty(panel1, textBoxHowManyTries, StartBtn);
             _checkControler.CheckForDuplicate(textBoxValue1, panel1, StartBtn);
         }
-
 
         private void textBoxValue2_TextChanged(object sender, EventArgs e)
         {

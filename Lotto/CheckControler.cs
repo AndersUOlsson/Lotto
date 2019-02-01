@@ -32,7 +32,7 @@ namespace Lotto
         public void CheckForHowManyTimes(Control textBoxHowManyTries)
         {
             var res = int.TryParse(textBoxHowManyTries.Text, out var val);
-            if ((!res || val <= 1000000) && val >= 0) return;
+            if ((!res || val <= 100000000) && val >= 0) return;
             MessageBox.Show(@"Please input 1 to 1 000 000 and integer only.");
             textBoxHowManyTries.Text = "";
         }

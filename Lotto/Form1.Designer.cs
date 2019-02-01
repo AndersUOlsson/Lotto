@@ -46,6 +46,7 @@
             this.textBoxValue6 = new System.Windows.Forms.TextBox();
             this.textBoxValue7 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Scorelbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,11 +206,22 @@
             this.panel1.Size = new System.Drawing.Size(591, 99);
             this.panel1.TabIndex = 23;
             // 
+            // Scorelbl
+            // 
+            this.Scorelbl.AutoSize = true;
+            this.Scorelbl.Location = new System.Drawing.Point(531, 234);
+            this.Scorelbl.Name = "Scorelbl";
+            this.Scorelbl.Size = new System.Drawing.Size(74, 13);
+            this.Scorelbl.TabIndex = 24;
+            this.Scorelbl.Text = "Score counter";
+            this.Scorelbl.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(622, 290);
+            this.Controls.Add(this.Scorelbl);
             this.Controls.Add(this.textBoxHowManySixth);
             this.Controls.Add(this.textBoxHowManySeventh);
             this.Controls.Add(this.textBoxHowManyFives);
@@ -250,6 +262,7 @@
         private System.Windows.Forms.TextBox textBoxValue6;
         private System.Windows.Forms.TextBox textBoxValue7;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Scorelbl;
     }
 }
 
