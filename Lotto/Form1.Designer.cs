@@ -34,17 +34,17 @@
             this.fiveCorrectLbl = new System.Windows.Forms.Label();
             this.sixCorrectLbl = new System.Windows.Forms.Label();
             this.sevenCorrectLbl = new System.Windows.Forms.Label();
-            this.textBoxValue1 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxHowManyTries = new System.Windows.Forms.TextBox();
             this.textBoxHowManyFives = new System.Windows.Forms.TextBox();
             this.textBoxHowManySeventh = new System.Windows.Forms.TextBox();
             this.textBoxHowManySixth = new System.Windows.Forms.TextBox();
-            this.textBoxValue2 = new System.Windows.Forms.TextBox();
-            this.textBoxValue3 = new System.Windows.Forms.TextBox();
-            this.textBoxValue4 = new System.Windows.Forms.TextBox();
-            this.textBoxValue5 = new System.Windows.Forms.TextBox();
-            this.textBoxValue6 = new System.Windows.Forms.TextBox();
-            this.textBoxValue7 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Scorelbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -106,13 +106,13 @@
             this.sevenCorrectLbl.TabIndex = 5;
             this.sevenCorrectLbl.Text = "7 rätt:";
             // 
-            // textBoxValue1
+            // textBox1
             // 
-            this.textBoxValue1.Location = new System.Drawing.Point(70, 37);
-            this.textBoxValue1.Name = "textBoxValue1";
-            this.textBoxValue1.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue1.TabIndex = 6;
-            this.textBoxValue1.Leave += new System.EventHandler(this.textBoxValue1_TextChanged);
+            this.textBox1.Location = new System.Drawing.Point(70, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(69, 20);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Leave += new System.EventHandler(this.textBoxValue1_TextChanged);
             // 
             // textBoxHowManyTries
             // 
@@ -143,64 +143,64 @@
             this.textBoxHowManySixth.Size = new System.Drawing.Size(100, 20);
             this.textBoxHowManySixth.TabIndex = 16;
             // 
-            // textBoxValue2
+            // textBox2
             // 
-            this.textBoxValue2.Location = new System.Drawing.Point(145, 37);
-            this.textBoxValue2.Name = "textBoxValue2";
-            this.textBoxValue2.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue2.TabIndex = 17;
-            this.textBoxValue2.Leave += new System.EventHandler(this.textBoxValue2_TextChanged);
+            this.textBox2.Location = new System.Drawing.Point(145, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(69, 20);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.Leave += new System.EventHandler(this.textBoxValue2_TextChanged);
             // 
-            // textBoxValue3
+            // textBox3
             // 
-            this.textBoxValue3.Location = new System.Drawing.Point(220, 37);
-            this.textBoxValue3.Name = "textBoxValue3";
-            this.textBoxValue3.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue3.TabIndex = 18;
-            this.textBoxValue3.Leave += new System.EventHandler(this.textBoxValue3_TextChanged);
+            this.textBox3.Location = new System.Drawing.Point(220, 37);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(69, 20);
+            this.textBox3.TabIndex = 18;
+            this.textBox3.Leave += new System.EventHandler(this.textBoxValue3_TextChanged);
             // 
-            // textBoxValue4
+            // textBox4
             // 
-            this.textBoxValue4.Location = new System.Drawing.Point(295, 37);
-            this.textBoxValue4.Name = "textBoxValue4";
-            this.textBoxValue4.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue4.TabIndex = 19;
-            this.textBoxValue4.Leave += new System.EventHandler(this.textBoxValue4_TextChanged);
+            this.textBox4.Location = new System.Drawing.Point(295, 37);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(69, 20);
+            this.textBox4.TabIndex = 19;
+            this.textBox4.Leave += new System.EventHandler(this.textBoxValue4_TextChanged);
             // 
-            // textBoxValue5
+            // textBox5
             // 
-            this.textBoxValue5.Location = new System.Drawing.Point(370, 37);
-            this.textBoxValue5.Name = "textBoxValue5";
-            this.textBoxValue5.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue5.TabIndex = 20;
-            this.textBoxValue5.Leave += new System.EventHandler(this.textBoxValue5_TextChanged);
+            this.textBox5.Location = new System.Drawing.Point(370, 37);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(69, 20);
+            this.textBox5.TabIndex = 20;
+            this.textBox5.Leave += new System.EventHandler(this.textBoxValue5_TextChanged);
             // 
-            // textBoxValue6
+            // textBox6
             // 
-            this.textBoxValue6.Location = new System.Drawing.Point(445, 37);
-            this.textBoxValue6.Name = "textBoxValue6";
-            this.textBoxValue6.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue6.TabIndex = 21;
-            this.textBoxValue6.Leave += new System.EventHandler(this.textBoxValue6_TextChanged);
+            this.textBox6.Location = new System.Drawing.Point(445, 37);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(69, 20);
+            this.textBox6.TabIndex = 21;
+            this.textBox6.Leave += new System.EventHandler(this.textBoxValue6_TextChanged);
             // 
-            // textBoxValue7
+            // textBox7
             // 
-            this.textBoxValue7.Location = new System.Drawing.Point(520, 37);
-            this.textBoxValue7.Name = "textBoxValue7";
-            this.textBoxValue7.Size = new System.Drawing.Size(69, 20);
-            this.textBoxValue7.TabIndex = 22;
-            this.textBoxValue7.Leave += new System.EventHandler(this.textBoxValue7_TextChanged);
+            this.textBox7.Location = new System.Drawing.Point(520, 37);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(69, 20);
+            this.textBox7.TabIndex = 22;
+            this.textBox7.Leave += new System.EventHandler(this.textBoxValue7_TextChanged);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.LottoRowLbl);
-            this.panel1.Controls.Add(this.textBoxValue7);
-            this.panel1.Controls.Add(this.textBoxValue1);
-            this.panel1.Controls.Add(this.textBoxValue6);
-            this.panel1.Controls.Add(this.textBoxValue2);
-            this.panel1.Controls.Add(this.textBoxValue5);
-            this.panel1.Controls.Add(this.textBoxValue3);
-            this.panel1.Controls.Add(this.textBoxValue4);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Location = new System.Drawing.Point(12, 29);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(591, 99);
@@ -232,6 +232,7 @@
             this.Controls.Add(this.triesLbl);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Lotto";
             this.Leave += new System.EventHandler(this.textBoxValue1_TextChanged);
@@ -250,19 +251,19 @@
         private System.Windows.Forms.Label fiveCorrectLbl;
         private System.Windows.Forms.Label sixCorrectLbl;
         private System.Windows.Forms.Label sevenCorrectLbl;
-        private System.Windows.Forms.TextBox textBoxValue1;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBoxHowManyTries;
         private System.Windows.Forms.TextBox textBoxHowManyFives;
         private System.Windows.Forms.TextBox textBoxHowManySeventh;
         private System.Windows.Forms.TextBox textBoxHowManySixth;
-        private System.Windows.Forms.TextBox textBoxValue2;
-        private System.Windows.Forms.TextBox textBoxValue3;
-        private System.Windows.Forms.TextBox textBoxValue4;
-        private System.Windows.Forms.TextBox textBoxValue5;
-        private System.Windows.Forms.TextBox textBoxValue6;
-        private System.Windows.Forms.TextBox textBoxValue7;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label Scorelbl;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

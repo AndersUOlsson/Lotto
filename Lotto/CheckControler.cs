@@ -9,11 +9,13 @@ namespace Lotto
 {
     class CheckControler
     {
+
+        bool flag = false;
         //Control if the numbers of the ticket input is in the valid interval.
         public void ControlNumberInterval(Control textBox)
         {
             var res = int.TryParse(textBox.Text, out var val);
-            if (res && (val > 35 || val < 1) && textBox.Text != string.Empty)
+            if (!res || (val > 35 || val < 1) && textBox.Text != string.Empty)
             {
                 MessageBox.Show("Please input 1 to 35 only.");
                 textBox.Text = string.Empty;
@@ -23,8 +25,19 @@ namespace Lotto
         //Control if the numbers of the ticket input is duplicate or not.
         public void CheckForDuplicate(Control textBox, Control panel, Button StartBtn)
         {
-            if (!panel.Controls.OfType<TextBox>().Any(tb => textBox.Text.Equals(tb.Text) && tb != textBox)) return;
-            MessageBox.Show("Duplicate text");
+            if (!panel.Controls.OfType<TextBox>().Any(tb => textBox.Text.Equals(tb.Text) && tb != textBox))
+            {
+                flag = false;
+                return;
+            } 
+
+            if(!flag && !(textBox.Text == string.Empty))
+            {
+                MessageBox.Show("Duplicate text");
+                textBox.Text = string.Empty;
+                flag = true;
+            }
+            
             StartBtn.Enabled = false;
         }
 
@@ -32,7 +45,7 @@ namespace Lotto
         public void CheckForHowManyTimes(Control textBoxHowManyTries)
         {
             var res = int.TryParse(textBoxHowManyTries.Text, out var val);
-            if ((!res || val <= 100000000) && val >= 0) return;
+            if ((res || val <= 1000000) && val >= 0) return;
             MessageBox.Show(@"Please input 1 to 1 000 000 and integer only.");
             textBoxHowManyTries.Text = "";
         }

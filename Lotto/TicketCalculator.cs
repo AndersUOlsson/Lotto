@@ -5,8 +5,8 @@ namespace Lotto
 {
     class TicketCalculator
     {
-        public int[] ticketNumbers = new int[7];
-        TicketGenerator  ticketGenerator = new TicketGenerator();
+        private int[] ticketNumbers = new int[7];
+        private TicketGenerator  ticketGenerator = new TicketGenerator();
 
         //Set the value of the ticket that user added in the GUI.
         public int[] SetTheNumberOfTheTicket(string[] value,int howManyTimes)
@@ -26,31 +26,29 @@ namespace Lotto
         private int[] ScoreCounter(int[] ticketNumber, int howManyTimes)
         {
             int[] result = {0, 0, 0};
-            //Random gen. with a seed.
-            var rnd = new Random(DateTime.Now.TimeOfDay.Milliseconds);
+            
             //This is the brain, loops how many times the user wants.
             for (int i = 0; i < howManyTimes; i++)
             {
+                var winner = 0;
                 //Function for the number generator for the system. 
                 var seriesOfNumbers = new int[7];
                 seriesOfNumbers = ticketGenerator.GeneratesATicketSeries();
 
                 //Score calculator.
-                var temp = 0;
-                for (var a = 0; a < seriesOfNumbers.Length; a++)
+                for (int j = 0; j < ticketNumber.Length; j++)
                 {
-                    foreach (var t in ticketNumber)
+                    for (int k = 0; k < seriesOfNumbers.Length; k++)
                     {
-                        if (seriesOfNumbers[a].Equals(t))
+                        if (ticketNumber.ElementAt(j) == seriesOfNumbers.ElementAt(k))
                         {
-                            temp++;
-                            seriesOfNumbers[a] = 0;
+                            winner++;
                         }
                     }
                 }
 
                 //This keeps score. 
-                switch (temp)
+                switch (winner)
                 {
                     case 5:
                         result[0]++;
